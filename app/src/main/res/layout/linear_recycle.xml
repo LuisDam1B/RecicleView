@@ -1,0 +1,53 @@
+<?xml version="1.0" encoding="utf-8"?>
+
+<androidx.cardview.widget.CardView xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+
+    app:cardElevation="2dp"
+    app:cardCornerRadius="2dp"
+    app:cardUseCompatPadding="true"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    android:background="#B1ABAB">
+
+    <LinearLayout
+        android:orientation="horizontal"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:background="#747070">
+        <LinearLayout
+            android:layout_weight="0.7"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:orientation="vertical">
+
+            <TextView
+                android:id="@+id/nombre"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:textColor="@android:color/white"
+                android:textSize="20dp"
+                android:text="Nombre"/>
+
+            <TextView
+                android:id="@+id/email"
+
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="Email"/>
+
+
+        </LinearLayout>
+
+        <ImageView
+            android:id="@+id/send"
+            android:layout_weight="0.3"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:src="@android:drawable/ic_menu_send">
+
+        </ImageView>
+
+
+    </LinearLayout>
+</androidx.cardview.widget.CardView>
