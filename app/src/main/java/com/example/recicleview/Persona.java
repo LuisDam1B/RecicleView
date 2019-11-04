@@ -4,10 +4,12 @@ public class Persona {
 
     String nombre;
     String email;
+    int edad;
 
-    public Persona(String nombre,String email) {
+    public Persona(String nombre,String email,int edad) {
         this.nombre = nombre;
         this.email = email;
+        this.edad = edad;
     }
 
     @Override
@@ -15,6 +17,7 @@ public class Persona {
         return "Persona{" +
                 "nombre='" + nombre + '\'' +
                 ", email='" + email + '\'' +
+                ", edad='" + edad + '\'' +
                 '}';
     }
 }
